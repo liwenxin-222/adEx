@@ -21,6 +21,31 @@
  *
  */
 
+var jobMap = {
+    isGO: true,
+    game: {
+        xiaoMai: {
+
+        },
+        banQu: {
+
+        },
+        caiQu: {
+
+        },
+        done: false,
+        selected: true,
+    }
+}
+
+function stayGo() {
+    jobMap.isGO = false;
+}
+
+function GO() {
+    jobMap.isGO = true;
+}
+
 function main() {
     //开始再这里编写代码了！！
     // toast("Hello World");
@@ -40,9 +65,18 @@ function main() {
     logd("开始执行脚本...")
     initImg();
     sleep(1000);
-    shopping();
-
-    // findCurrentPage();
+    // shopping();
+    // logi(jobMap.game.done+ '333')
+    while (true) {
+        if (isScriptExit()) {
+            break;
+        }
+        if (!jobMap.isGO) {
+            break;
+        }
+        findCurrentPage();
+        sleep(5000);
+    }
 
     // if (!netcardProcessor()) {
     //     return;

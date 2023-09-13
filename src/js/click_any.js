@@ -26,3 +26,68 @@ function click_shop_buy() {
 function click_shop_confirm_buy() {
     clickPoint(random(1228, 1409), random(916, 956));
 }
+
+// 最中间的确定
+function click_center_ok() {
+    clickPoint(random(1077, 1283), random(710, 750));
+}
+
+function click_job_niangzao() {
+    clickPoint(random(422, 602), random(151, 186));
+}
+
+function click_job_niangzao_start() {
+    clickPoint(random(246, 502), random(226, 289));
+}
+
+function click_game_no1() {
+    clickPoint(random(500, 550), random(300, 380))
+}
+
+function click_game_no2() {
+    clickPoint(random(886, 1027), random(586, 679))
+
+}
+function click_game_no3() {
+    clickPoint(random(1281, 1417), random(353, 423))
+}
+
+function click_game_select_done() {
+    clickPoint(random(1900, 1978), random(900, 960));
+}
+function click_game_select_done_goon () {
+    clickPoint(random(810, 965), random(736, 774));
+}
+
+function click_answer_tiaoguo() {
+    clickPoint(random(2046, 2122), random(44, 70));
+}
+
+function click_answer_top_text() {
+    clickPoint(random(1827, 2039), random(613, 648));
+}
+
+function click_answer_down_text() {
+    clickPoint(random(1762, 2029), random(738, 799));
+}
+
+function click_niangzao_wrapper() {
+    clickPoint(random(288, 452), random(300, 386));
+}
+
+function click_jon_renwu() {
+    clickPoint(random(233, 319), random(151, 186));
+}
+
+function click_game_ReStart() {
+    clickPoint(random(1370, 1535), random(805, 845));
+}
+
+function click_game_wanchentiaozhan() {
+    clickPoint(random(1335, 1555), random(940, 975));
+
+}
+
+function click_game_banqu_anniu() {
+    clickPoint(random(1885, 2000), random(810, 915))
+}
