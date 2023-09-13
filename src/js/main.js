@@ -25,12 +25,15 @@ var jobMap = {
     isGO: true,
     game: {
         xiaoMai: {
+            done: false,
 
         },
         banQu: {
+            done: false,
 
         },
         caiQu: {
+            done: false,
 
         },
         done: false,
@@ -65,18 +68,18 @@ function main() {
     logd("开始执行脚本...")
     initImg();
     sleep(1000);
-    // shopping();
+    shopping();
     // logi(jobMap.game.done+ '333')
-    while (true) {
-        if (isScriptExit()) {
-            break;
-        }
-        if (!jobMap.isGO) {
-            break;
-        }
-        findCurrentPage();
-        sleep(5000);
-    }
+    // while (true) {
+    //     if (isScriptExit()) {
+    //         break;
+    //     }
+    //     if (!jobMap.isGO) {
+    //         break;
+    //     }
+    //     findCurrentPage();
+    //     sleep(5000);
+    // }
 
     // if (!netcardProcessor()) {
     //     return;

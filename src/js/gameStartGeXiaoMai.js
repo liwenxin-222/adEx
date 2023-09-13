@@ -1,15 +1,15 @@
 function gameStartGeXiaoMai() {
     function startPoint() {
         return {
-            x: random(1375, 1455),
-            y: random(355, 470),
+            x: random(450, 680),
+            y: random(285, 445),
         }
     }
 
     function endPoint() {
         return {
-            x: random(1950, 2055),
-            y: random(420, 555)
+            x: random(1525, 1790),
+            y: random(395, 560)
         }
     }
 
@@ -47,6 +47,7 @@ function gameStartGeXiaoMai() {
                 case 0:
                     logi('结束了。');
                     jobMap.game.xiaoMai.done = true;
+                    cancelInterval(t);
                     break;
                 case 1:
                     logi('有坏籽');

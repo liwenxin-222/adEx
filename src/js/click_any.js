@@ -17,6 +17,7 @@ function click_shop_no1() {
 function click_shop_return() {
     clickPoint(random(1485, 1638), random(990, 1033));
 }
+
 // 交易行购买
 function click_shop_buy() {
     clickPoint(random(1713, 1856), random(990, 1033));
@@ -48,6 +49,7 @@ function click_game_no2() {
     clickPoint(random(886, 1027), random(586, 679))
 
 }
+
 function click_game_no3() {
     clickPoint(random(1281, 1417), random(353, 423))
 }
@@ -55,7 +57,8 @@ function click_game_no3() {
 function click_game_select_done() {
     clickPoint(random(1900, 1978), random(900, 960));
 }
-function click_game_select_done_goon () {
+
+function click_game_select_done_goon() {
     clickPoint(random(810, 965), random(736, 774));
 }
 
@@ -90,4 +93,19 @@ function click_game_wanchentiaozhan() {
 
 function click_game_banqu_anniu() {
     clickPoint(random(1885, 2000), random(810, 915))
+}
+
+function clickOk(x, y) {
+    var result = clickPoint(x, y);
+    if (!result) {
+        clickOk(x, y);
+    }
+}
+
+function fastClick(point, count) {
+    for (let i = 0; i < count; i++) {
+        logi(i);
+        clickPoint(random(point.x[0], point.x[1]), random(point.y[0], point.y[1]));
+        sleep(100);
+    }
 }

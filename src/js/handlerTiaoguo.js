@@ -15,7 +15,8 @@ function handlerTiaoguo() {
 
     if (
         result && result[0] && result[0].label.includes('小麦磨碎挑战') ||
-        result && result[0] && result[0].label.includes('拌曲配料挑战')
+        result && result[0] && result[0].label.includes('拌曲配料挑战') ||
+        result && result[0] && result[0].label.includes('踩曲')
     ) {
         logi('小麦磨碎挑战');
         click_answer_top_text();

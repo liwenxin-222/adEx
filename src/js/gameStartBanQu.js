@@ -23,6 +23,8 @@ function gameStartBanQu() {
             switch (points) {
                 case 0:
 
+                    click_game_banqu_anniu();
+
                     break;
                 case 1:
 
@@ -32,9 +34,9 @@ function gameStartBanQu() {
             }
             //图片要回收
             image.recycle(tmpImage)
+            image.recycle(tmpImageClip)
         }
 
 
-        click_game_banqu_anniu();
     }
 }
