@@ -68,19 +68,20 @@ function main() {
     logd("开始执行脚本...")
     initImg();
     sleep(1000);
-    shopping();
+    // shopping();
     // logi(jobMap.game.done+ '333')
-    // while (true) {
-    //     if (isScriptExit()) {
-    //         break;
-    //     }
-    //     if (!jobMap.isGO) {
-    //         break;
-    //     }
-    //     findCurrentPage();
-    //     sleep(5000);
-    // }
-
+    while (true) {
+        if (isScriptExit()) {
+            break;
+        }
+        if (!jobMap.isGO) {
+            logi('退出主循环');
+            break;
+        }
+        logi('主循环再跑~~~')
+        findCurrentPage();
+        sleep(5000);
+    }
     // if (!netcardProcessor()) {
     //     return;
     // }

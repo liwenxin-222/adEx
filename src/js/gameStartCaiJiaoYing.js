@@ -50,20 +50,22 @@ function gameStartCaiJiaoYing() {
         if (jobMap.game.caiQu.done) {
             break;
         }
-        // if (tmpImage != null) {
+        let tmpImage = image.captureFullScreen();
+
+        if (tmpImage != null) {
             for (let i = 0; i < numberJiaoYingColor.length; i++) {
-                let tmpImage = image.captureFullScreen();
+                logi('开始截图---' + i);
 
                 let points = image.findMultiColor(
                     tmpImage, numberJiaoYingColor[i].firstColor,
                     numberJiaoYingColor[i].multiColor,
-                    0.9, 80, 410, 2260, 1030, 1, 2
+                    0.9, 80, 410, 2260, 1030, 10, 2
                 );
 
                 if (points) {
-                    var filterList = points;
-                    // var filterList = filterXiangtongWeizhi(points);
-                    logd("points " + JSON.stringify(filterList));
+                    // var filterList = points;
+                    var filterList = filterXiangtongWeizhi(points);
+                    logd(i + " 找到points " + JSON.stringify(filterList));
 
                     for (let k = 0; k < filterList.length; k++) {
                         var x = filterList[k].x;
@@ -81,12 +83,13 @@ function gameStartCaiJiaoYing() {
                     }
 
                 }
-                image.recycle(tmpImage)
+
             }
-            // 图片要回收
-        // }
-        logi('循环完成');
-        sleep(500)
+            logi('循环完成');
+        }
+        // 图片要回收
+        image.recycle(tmpImage);
+        sleep(100);
     }
 
     // TODO 没用。太慢

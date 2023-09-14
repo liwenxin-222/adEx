@@ -1,6 +1,7 @@
 function shopping() {
     mainOcr();
 
+    sleep(1000);
     function shuaXin() {
         click_chuShou();
         sleep(random(500, 550));
