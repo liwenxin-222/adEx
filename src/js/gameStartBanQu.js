@@ -1,21 +1,21 @@
 const daojuMap = [
     {
         name: '袋子',
-        firstColor:  "#E7BA6B-#101010",
-        multiColor: "-14|26|#BF905D-#101010,16|38|#BD855D-#101010",
-        sign: "1171|889|#E7BB6C-#101010,1155|908|#E8C59D-#101010,1189|908|#B9845A-#101010,1178|940|#CB9764-#101010,1156|951|#C89B71-#101010",
+        firstColor:  "#E7BB6C-#101010",
+        multiColor:  "1|25|#DBAC75-#101010,15|36|#BA7C4C-#101010,-2|33|#6F491C-#101010",
+        sign: "1118|888|#F4DFA4-#101010,1110|905|#E3C7A2-#101010,1145|908|#B88258-#101010,1142|932|#C99866-#101010,1120|941|#542D01-#101010",
     },
     {
         name: '盘子',
-        firstColor: "#FED8AA-#101010",
-        multiColor: "20|-5|#E3C772-#101010,40|4|#FFDAAB-#101010,4|26|#D7D5ED-#101010,35|26|#A1A0B9-#101010,47|25|#FFDDAD-#101010,-9|25|#FFDDAD-#101010",
-        sign: "1171|897|#E8D27F-#101010,1142|918|#EEDA92-#101010,1156|943|#D3D3DE-#101010,1208|925|#A9630F-#101010,1173|953|#816654-#101010",
+        firstColor: "#EFD991-#101010",
+        multiColor: "-13|25|#CAC7C2-#101010,0|26|#D0D0E4-#101010,25|14|#A96915-#101010",
+        sign: "1122|901|#E5CA79-#101010,1107|921|#EDD98F-#101010,1151|941|#9593B0-#101010,1122|940|#BFBBD5-#101010,1101|941|#D8D6EC-#101010",
     },
     {
         name: '水滴',
-        firstColor: "#6FA0D6-#101010",
-        multiColor: "12|9|#9DC5EC-#101010,18|30|#F1F1F4-#101010,36|13|#C4D8EF-#101010,36|4|#FFDAAB-#101010,33|-9|#5B8FCE-#101010",
-        sign: "1171|898|#639DD5-#101010,1158|927|#B8D9F5-#101010,1184|951|#8A98B6-#101010,1199|921|#67A1DB-#101010,1142|905|#83B0DE-#101010"
+        firstColor: "#6095D2-#101010",
+        multiColor: "-5|24|#B5D5F4-#101010,4|40|#D8DCDE-#101010,17|21|#6EA4DB-#101010",
+        sign: "1121|892|#629BD0-#101010,1121|920|#97C1E9-#101010,1122|943|#6AA2D9-#101010,1095|901|#4A84CA-#101010,1147|893|#80AADD-#101010"
     }
 ];
 
@@ -30,7 +30,7 @@ function gameStartBanQu() {
     function banquIsDone() {
         let tmpImage = image.captureFullScreen();
         if (tmpImage != null) {
-            let firstColor = "365|230|#4C3225-#101010,405|530|#120706-#101010,765|965|#D0E0FF-#101010,1350|965|#FFE19B-#101010,1555|970|#FEDF97-#101010";
+            let firstColor =  "120|184|#190C17-#101010,158|514|#070207-#101010,246|994|#8D768D-#101010,536|1010|#8E6E64-#101010,944|954|#CEDEFF-#101010,1504|968|#FEE099-#101010";
             let points = image.cmpColor(tmpImage, firstColor, 0.9, 0, 0, 0, 0);
             logd("points " + points);
             if (points) {
@@ -63,7 +63,7 @@ function gameStartBanQu() {
                 // 水滴
                 daojuMap[2].sign,
             ];
-            let currentSelectIndex = image.cmpMultiColor(tmpImage, currentSelectTab, 0.9, 1093, 847, 1243, 990);
+            let currentSelectIndex = image.cmpMultiColor(tmpImage, currentSelectTab, 0.9, 1065,852,1172,974);
             logd("points " + currentSelectIndex);
             switch (currentSelectIndex) {
                 case 0:
@@ -83,9 +83,9 @@ function gameStartBanQu() {
 
             if (currentSelectIndex !== -1) {
                 let firstColor = "#FFFFFF-#101010"
-                let multiColor = "2|11|#FFFFFF-#101010,2|25|#FFFFFF-#101010,1|39|#FFFFFF-#101010,1|48|#FFFFFF-#101010,2|55|#FFFFFF-#101010,2|68|#FFFFFF-#101010,0|75|#FFFFFF-#101010";
+                let multiColor = "2|24|#FFFFFF-#101010,1|49|#FFFFFF-#101010,2|64|#FFFFFF-#101010,1|73|#FFFFFF-#101010";
                 // 当前指针位置
-                let currentPoint = image.findMultiColor(tmpImage, firstColor, multiColor, 0.9, 496, 726, 1756, 852, 1, 2);
+                let currentPoint = image.findMultiColor(tmpImage, firstColor, multiColor, 0.9, 523,713,1729,859, 1, 2);
                 logi('当前指针位置-- ' + JSON.stringify(currentPoint));
                 if (currentPoint) {
                     var x = currentPoint[0].x;
@@ -93,12 +93,12 @@ function gameStartBanQu() {
                     // 往右走
                     if (zhiZhen_X < x) {
                         x = x - 10;
-                        ex = x + 95;
+                        ex = x + 110;
                     }
                     // 往左走
                     else {
                         logi('往左走');
-                        x = x - 95;
+                        x = x - 110;
                         ex = x + 10;
                     }
                     zhiZhen_X = currentPoint[0].x;
@@ -106,7 +106,7 @@ function gameStartBanQu() {
                         tmpImage,
                         daojuMap[currentSelectIndex].firstColor,
                         daojuMap[currentSelectIndex].multiColor,
-                        0.9, x, 630, ex, 760, 1, 2);
+                        0.9, x, 626, ex, 736, 1, 2);
 
 
                     if (isOkClick) {

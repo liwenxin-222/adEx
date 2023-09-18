@@ -42,24 +42,24 @@ function click_job_niangzao_start() {
 }
 
 function click_game_no1() {
-    clickPoint(random(500, 550), random(300, 380))
+    clickPoint(random(424, 550), random(300, 380))
 }
 
 function click_game_no2() {
-    clickPoint(random(886, 1027), random(586, 679))
+    clickPoint(random(836, 1027), random(586, 679))
 
 }
 
 function click_game_no3() {
-    clickPoint(random(1281, 1417), random(353, 423))
+    clickPoint(random(1214, 1356), random(353, 423))
 }
 
 function click_game_select_done() {
-    clickPoint(random(1900, 1978), random(900, 960));
+    clickPoint(random(1900, 1928), random(900, 960));
 }
 
 function click_game_select_done_goon() {
-    clickPoint(random(810, 965), random(736, 774));
+    clickPoint(random(810, 925), random(736, 774));
 }
 
 function click_answer_tiaoguo() {

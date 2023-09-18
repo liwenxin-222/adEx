@@ -89,82 +89,82 @@ function gameStartCaiJiaoYing() {
                         }
 
                         logi(JSON.stringify(pObj) + '---', numberJiaoYingColor[i].name);
-
-                        if (
-                            filterList.length === 2
-                        ) {
-
-                            if (k === 0) {
-                                for (let j = 0; j < numberJiaoYingColor[i].name; j++) {
-                                    var touch1x = random(x, x + 40);
-                                    var touch1y = random(y, y + 40);
-                                    touch1.push({
-                                        "action": 0,
-                                        "x": touch1x,
-                                        "y": touch1y,
-                                        "pointer": 1,
-                                        "delay": random(40, 50)
-                                    });
-                                    touch1.push({
-                                        "action": 1,
-                                        "x": touch1x,
-                                        "y": touch1y,
-                                        "pointer": 1,
-                                        "delay": 1
-                                    });
-                                }
-
-                            }
-                            if (k === 1) {
-                                for (let j = 0; j < numberJiaoYingColor[i].name; j++) {
-                                    var touch2x = random(x, x + 40);
-                                    var touch2y = random(y, y + 40);
-                                    touch2.push({
-                                        "action": 0,
-                                        "x": touch2x,
-                                        "y": touch2y,
-                                        "pointer": 2,
-                                        "delay": random(40, 50)
-                                    });
-                                    touch2.push({
-                                        "action": 1,
-                                        "x": touch2x,
-                                        "y": touch2y,
-                                        "pointer": 2,
-                                        "delay": 1
-                                    });
-                                }
-                            }
-
-                        } else {
-                            touch3.push([]);
-                            for (let j = 0; j < numberJiaoYingColor[i].name; j++) {
-                                var touch1xx = random(x, x + 40);
-                                var touch1yy = random(y, y + 40);
-                                touch3[touch3.length - 1].push({
-                                    "action": 0,
-                                    "x": touch1xx,
-                                    "y": touch1yy,
-                                    "pointer": touch3.length,
-                                    "delay": random(40, 50)
-                                });
-                                touch3[touch3.length - 1].push({
-                                    "action": 1,
-                                    "x": touch1xx,
-                                    "y": touch1yy,
-                                    "pointer": touch3.length,
-                                    "delay": 1
-                                });
-                            }
-
-                            if (touch3.length > 1) {
-                                logi('[touch3]多点触控--' + JSON.stringify(touch3));
-                                multiTouch(touch3[0], touch3[1], null, 30000);
-                                touch3 = [];
-                            }
-
-
-                        }
+                        fastClick(pObj, numberJiaoYingColor[i].name);
+                        // if (
+                        //     filterList.length === 2
+                        // ) {
+                        //
+                        //     if (k === 0) {
+                        //         for (let j = 0; j < numberJiaoYingColor[i].name; j++) {
+                        //             var touch1x = random(x, x + 40);
+                        //             var touch1y = random(y, y + 40);
+                        //             touch1.push({
+                        //                 "action": 0,
+                        //                 "x": touch1x,
+                        //                 "y": touch1y,
+                        //                 "pointer": 1,
+                        //                 "delay": random(40, 50)
+                        //             });
+                        //             touch1.push({
+                        //                 "action": 1,
+                        //                 "x": touch1x,
+                        //                 "y": touch1y,
+                        //                 "pointer": 1,
+                        //                 "delay": 1
+                        //             });
+                        //         }
+                        //
+                        //     }
+                        //     if (k === 1) {
+                        //         for (let j = 0; j < numberJiaoYingColor[i].name; j++) {
+                        //             var touch2x = random(x, x + 40);
+                        //             var touch2y = random(y, y + 40);
+                        //             touch2.push({
+                        //                 "action": 0,
+                        //                 "x": touch2x,
+                        //                 "y": touch2y,
+                        //                 "pointer": 2,
+                        //                 "delay": random(40, 50)
+                        //             });
+                        //             touch2.push({
+                        //                 "action": 1,
+                        //                 "x": touch2x,
+                        //                 "y": touch2y,
+                        //                 "pointer": 2,
+                        //                 "delay": 1
+                        //             });
+                        //         }
+                        //     }
+                        //
+                        // } else {
+                        //     touch3.push([]);
+                        //     for (let j = 0; j < numberJiaoYingColor[i].name; j++) {
+                        //         var touch1xx = random(x, x + 40);
+                        //         var touch1yy = random(y, y + 40);
+                        //         touch3[touch3.length - 1].push({
+                        //             "action": 0,
+                        //             "x": touch1xx,
+                        //             "y": touch1yy,
+                        //             "pointer": touch3.length,
+                        //             "delay": random(40, 50)
+                        //         });
+                        //         touch3[touch3.length - 1].push({
+                        //             "action": 1,
+                        //             "x": touch1xx,
+                        //             "y": touch1yy,
+                        //             "pointer": touch3.length,
+                        //             "delay": 1
+                        //         });
+                        //     }
+                        //
+                        //     if (touch3.length > 1) {
+                        //         logi('[touch3]多点触控--' + JSON.stringify(touch3));
+                        //         multiTouch(touch3[0], touch3[1], null, 30000);
+                        //         touch3 = [];
+                        //     }
+                        //
+                        //
+                        // }
 
                     }
 
