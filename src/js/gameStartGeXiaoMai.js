@@ -1,28 +1,28 @@
 function gameStartGeXiaoMai() {
     function startPoint() {
         return {
-            x: random(450, 680),
-            y: random(285, 445),
+            x: random(380, 490),
+            y: random(325, 485),
         }
     }
 
     function endPoint() {
         return {
-            x: random(1525, 1790),
-            y: random(395, 560)
+            x: random(1625, 1870),
+            y: random(375, 560)
         }
     }
 
     function loopSwiper() {
         var start = startPoint();
         var end = endPoint();
-        swipeToPoint(start.x, start.y, end.x, end.y, random(200, 250));
-        swipeToPoint(end.x, end.y, start.x, start.y, random(200, 250));
+        swipeToPoint(start.x, start.y, end.x, end.y, random(250, 350));
+        swipeToPoint(end.x, end.y, start.x, start.y, random(260, 360));
     }
     var t;
     t = setInterval(function() {
         loopSwiper();
-    },200);
+    },random(300, 350));
 
     while (true) {
         if (isScriptExit()) {
@@ -38,9 +38,9 @@ function gameStartGeXiaoMai() {
         if (tmpImage != null) {
             let multiColor = [
                 "275|180|#818A94-#101010,215|545|#4E4F4B-#101010,230|965|#705124-#101010,1760|185|#888C8E-#101010,1770|660|#524F47-#101010,1750|970|#76562E-#101010,1560|975|#FEDD94-#101010,985|965|#D6E3FE-#101010",
-                
+                "1100|562|#7FA344-#101010",
             ];
-            let points = image.cmpMultiColor(tmpImage, multiColor, 0.9, 0, 0, 0, 0);
+            let points = image.cmpMultiColor(tmpImage, multiColor, 0.9, 50,265,2295,1045);
             logd("points " + points);
 
             switch (points) {
@@ -55,7 +55,7 @@ function gameStartGeXiaoMai() {
                     sleep(2000);
                     t = setInterval(function() {
                         loopSwiper();
-                    },200);
+                    },random(300, 400));
                     break;
                 default:
                     logi('继续割小麦');
@@ -64,6 +64,6 @@ function gameStartGeXiaoMai() {
             image.recycle(tmpImage)
         }
 
-        sleep(300);
+        sleep(100);
     }
 }

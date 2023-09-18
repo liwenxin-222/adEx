@@ -86,11 +86,12 @@ function click_game_ReStart() {
     clickPoint(random(1370, 1535), random(805, 845));
 }
 
+// 完成挑战
 function click_game_wanchentiaozhan() {
     clickPoint(random(1335, 1555), random(940, 975));
 
 }
-
+// 拌曲的按钮
 function click_game_banqu_anniu() {
     clickPoint(random(1885, 2000), random(810, 915))
 }
@@ -101,11 +102,28 @@ function clickOk(x, y) {
         clickOk(x, y);
     }
 }
+// 一键领取基酒
+function click_yi_jian_ling_qu() {
+    clickPoint(random(1856, 2034), random(913, 958));
+}
+// 左上角返回
+function click_return_top () {
+    clickPoint(random(310, 495), random(26, 59));
+}
 
+function click_qiandao_x() {
+    clickPoint(random(1840, 1872), random(201, 226));
+}
+
+function click_huodongzhiyin_x() {
+    clickPoint(random(1854, 1884), random(151, 177));
+}
+
+//
 function fastClick(point, count) {
     for (let i = 0; i < count; i++) {
         logi(i);
         clickPoint(random(point.x[0], point.x[1]), random(point.y[0], point.y[1]));
-        sleep(100);
+        // sleep(random(10, 20));
     }
 }

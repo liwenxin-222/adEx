@@ -2,38 +2,37 @@ var numberJiaoYingColor = [
     {
         name: 1,
         firstColor: "#FFE9B3-#101010",
-        multiColor:  "-8|13|#B08552-#101010,-1|9|#FFE9B3-#101010,-1|16|#FFE9B3-#101010,-1|21|#FFE9B3-#101010,-1|30|#FFE9B3-#101010,-8|34|#FFE9B3-#101010,10|34|#FFE9B3-#101010,9|27|#A58951-#101010",
+        multiColor: "-4|1|#9B6A40-#101010,0|-4|#96663D-#101010,6|-4|#9E653A-#101010,6|-13|#9E693D-#101010,0|-14|#936F47-#101010,6|-27|#9B673D-#101010,2|-29|#9B6D43-#101010,2|-35|#FFE9B3-#101010,2|-37|#976840-#101010,12|-36|#FFE9B3-#101010,12|-26|#FFE9B3-#101010,12|-17|#FFE9B3-#101010,16|-5|#9E653A-#101010,16|-17|#9D673D-#101010,24|2|#98663D-#101010,13|5|#9C673B-#101010",
 
     },
     {
         name: 2,
-        firstColor: "#FFE9B3-#101010",
-        multiColor: "-5|-21|#A67341-#101010,-12|-17|#AF8158-#101010,-6|-18|#F5DDA9-#101010,-4|-11|#FFE9B3-#101010,-7|8|#A26C40-#101010,-5|8|#B58B60-#101010,-9|-17|#F5DEA9-#101010,-3|-7|#FFE9B3-#101010,-10|-13|#FFE9B3-#101010,-5|20|#FFE9B3-#101010,-3|7|#FFE9B3-#101010,6|-11|#A4804B-#101010,5|18|#FFE9B3-#101010,-12|8|#A88153-#101010,-14|14|#A67248-#101010,0|8|#FFE9B3-#101010,3|4|#A1673E-#101010,0|-17|#FFE9B3-#101010,-12|14|#A36F44-#101010,6|22|#A36D3F-#101010",
+        firstColor: "#9E6E3D-#101010",
+        multiColor: "4|-5|#FFE9B3-#101010,8|-8|#FFE9B3-#101010,12|-3|#A57445-#101010,17|-7|#FFE9B3-#101010,22|-3|#FFE9B3-#101010,15|9|#9C673B-#101010,10|14|#A06E40-#101010,9|17|#A47141-#101010,5|22|#D5B889-#101010,-1|29|#97663A-#101010,26|5|#9E6B3D-#101010,24|13|#A77545-#101010,19|19|#986B3D-#101010,15|17|#FFE9B3-#101010,15|24|#9D6439-#101010,24|29|#FFE9B3-#101010,14|29|#FFE9B3-#101010,29|29|#A37242-#101010,12|34|#90653E-#101010",
 
     },
     {
         name: 3,
-        firstColor: "#FFE9B3-#101010",
-        multiColor: "8|-3|#FFE9B3-#101010,15|1|#FFE9B3-#101010,7|6|#8B693D-#101010,5|11|#9A663A-#101010,6|26|#936F43-#101010,9|28|#92633B-#101010,16|30|#FFE9B3-#101010,-3|33|#FFE9B3-#101010,18|17|#9C683E-#101010",
+        firstColor: "#9F6D41-#101010",
+        multiColor: "5|-5|#FFE9B3-#101010,14|-7|#FFE9B3-#101010,12|-2|#A27143-#101010,11|6|#A06A3F-#101010,10|10|#FFE9B3-#101010,5|10|#A47C4D-#101010,9|16|#AB8654-#101010,5|21|#A37344-#101010,16|20|#A46F40-#101010,22|21|#FFE9B3-#101010,14|30|#FFE9B3-#101010,2|28|#FFE9B3-#101010,-3|23|#9F693F-#101010,1|33|#A06F42-#101010",
 
     },
     {
         name: 4,
         firstColor: "#FFE9B3-#101010",
-        multiColor: "0|24|#FFE9B3-#101010,0|36|#FFE9B3-#101010,7|24|#FFE9B3-#101010,-18|24|#FFE9B3-#101010,-10|19|#A0683B-#101010,-3|11|#A16B3E-#101010,-4|19|#A0683C-#101010,-6|33|#A07248-#101010",
+        multiColor: "-16|1|#946B4A-#101010,-11|10|#FEE8B2-#101010,-17|24|#FFE9B3-#101010,-11|20|#9E663B-#101010,-4|14|#9D653B-#101010,-6|31|#987047-#101010,2|34|#FFE9B3-#101010,9|25|#FFE9B3-#101010,7|31|#9D683D-#101010",
 
     },
     {
         name: 5,
         firstColor: "#FFE9B3-#101010",
-        multiColor: "-11|0|#FFE9B3-#101010,-16|1|#FFE9B3-#101010,-19|14|#FFE9B3-#101010,-10|10|#9D673B-#101010,-3|7|#997347-#101010,-2|19|#FFE9B3-#101010,-10|28|#91673E-#101010,-13|35|#FFE9B3-#101010",
+        multiColor: "0|19|#FFE9B3-#101010,7|12|#99643B-#101010,11|8|#906A42-#101010,18|3|#FFE9B3-#101010,19|13|#966B42-#101010,13|11|#966E43-#101010,8|24|#876640-#101010,1|29|#916B44-#101010,6|34|#9A643B-#101010,7|39|#FFE9B3-#101010,20|28|#FFE9B3-#101010",
 
     },
     {
         name: 6,
-        firstColor: "#FFE9B3-#101010",
-        multiColor: "-5|-2|#FFE9B3-#101010,-15|0|#FFE9B3-#101010,-19|10|#FFE9B3-#101010,-19|19|#FFE9B3-#101010,-10|14|#FFE9B3-#101010,-6|6|#8D6841-#101010,0|19|#FFE9B3-#101010,0|28|#FFE9B3-#101010,-6|34|#FFE9B3-#101010,-9|31|#9A643A-#101010",
-
+        firstColor: "#9A6940-#101010",
+        multiColor: "-3|-3|#FFE9B3-#101010,-11|-7|#FFE9B3-#101010,-10|0|#9D6A40-#101010,-14|4|#9B7047-#101010,-17|8|#9E663B-#101010,-22|11|#FFE9B3-#101010,-22|19|#FFE9B3-#101010,-2|9|#A07349-#101010,1|5|#977247-#101010,-8|20|#9D6A3F-#101010,-8|22|#9E6D3F-#101010,-1|25|#FFE9B3-#101010",
     },
     {
         name: 0,
@@ -59,7 +58,7 @@ function gameStartCaiJiaoYing() {
                 let points = image.findMultiColor(
                     tmpImage, numberJiaoYingColor[i].firstColor,
                     numberJiaoYingColor[i].multiColor,
-                    0.9, 80, 410, 2260, 1030, 10, 2
+                    0.9, 105, 415, 2215, 995, 20, 2
                 );
 
                 if (points) {
@@ -67,6 +66,9 @@ function gameStartCaiJiaoYing() {
                     var filterList = filterXiangtongWeizhi(points);
                     logd(i + " 找到points " + JSON.stringify(filterList));
 
+                    let touch1 = [];
+                    let touch2 = [];
+                    let touch3 = [];
                     for (let k = 0; k < filterList.length; k++) {
                         var x = filterList[k].x;
                         var y = filterList[k].y;
@@ -74,14 +76,74 @@ function gameStartCaiJiaoYing() {
                             x: [x, x + 40],
                             y: [y, y + 40],
                         }
+
                         if (numberJiaoYingColor[i].name === 0) {
                             jobMap.game.caiQu.done = true;
+                            logi('踩曲结束')
                             break;
                         }
+
                         logi(JSON.stringify(pObj) + '---', numberJiaoYingColor[i].name);
-                        fastClick(pObj, numberJiaoYingColor[i].name);
+
+                        if (
+                            filterList.length === 2
+                        ) {
+
+                            if (k === 0) {
+                                for (let j = 0; j < numberJiaoYingColor[i].name; j++) {
+                                    var touch1x = random(x, x + 40);
+                                    var touch1y = random(y, y + 40);
+                                    touch1.push({
+                                        "action": 0,
+                                        "x": touch1x,
+                                        "y": touch1y,
+                                        "pointer": 1,
+                                        "delay": random(40, 50)
+                                    });
+                                    touch1.push({
+                                        "action": 1,
+                                        "x": touch1x,
+                                        "y": touch1y,
+                                        "pointer": 1,
+                                        "delay": 1
+                                    });
+                                }
+
+                            }
+                            if (k === 1) {
+                                for (let j = 0; j < numberJiaoYingColor[i].name; j++) {
+                                    var touch2x = random(x, x + 40);
+                                    var touch2y = random(y, y + 40);
+                                    touch2.push({
+                                        "action": 0,
+                                        "x": touch2x,
+                                        "y": touch2y,
+                                        "pointer": 2,
+                                        "delay": random(40, 50)
+                                    });
+                                    touch2.push({
+                                        "action": 1,
+                                        "x": touch2x,
+                                        "y": touch2y,
+                                        "pointer": 2,
+                                        "delay": 1
+                                    });
+                                }
+                            }
+
+                        } else {
+                            fastClick(pObj, numberJiaoYingColor[i].name);
+                        }
+
                     }
 
+                    if (
+                        touch1.length > 0 ||
+                        touch2.length > 0
+                    ) {
+                        logi('多点触控--' + JSON.stringify(touch1) + JSON.stringify(touch2));
+                        multiTouch(touch1, touch2, null, 30000);
+                    }
                 }
 
             }
@@ -89,8 +151,10 @@ function gameStartCaiJiaoYing() {
         }
         // 图片要回收
         image.recycle(tmpImage);
-        sleep(100);
+        // sleep(100);
     }
+
+
 
     // TODO 没用。太慢
     // mainOcr();
@@ -127,16 +191,4 @@ function gameStartCaiJiaoYing() {
     //     sleep(500)
     // }
 
-}
-
-function filterXiangtongWeizhi(list) {
-    return list.filter((item, i) => {
-        if (i > 0 &&
-            (Math.abs(list[i].x - list[i - 1].x) + Math.abs(list[i].y - list[i - 1].y)) < 20
-        ) {
-
-        } else {
-            return item;
-        }
-    })
 }

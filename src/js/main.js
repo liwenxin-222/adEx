@@ -37,7 +37,7 @@ var jobMap = {
 
         },
         done: false,
-        selected: true,
+        selected: false,
     }
 }
 

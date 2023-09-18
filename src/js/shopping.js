@@ -39,7 +39,7 @@ function shopping() {
         image.recycle(tmpImage)
         image.recycle(clipImage)
 
-        if (result && result[0] && result[0].label < 40 ) {
+        if (result && result[0] && result[0].label < 3 ) {
             logi('发现漏');
             buyLou()
             // sleep(1000);
