@@ -93,9 +93,9 @@ function findCurrentPage() {
                 break;
             case 10:
                 logi('脚丫游戏结束');
-                click_game_wanchentiaozhan();
+                // click_game_wanchentiaozhan();
                 // sleep(2000);
-                GO();
+                // GO();
                 break;
             case 11:
                 logi('脚丫游戏开始');

@@ -1,42 +1,42 @@
 var numberJiaoYingColor = [
     {
         name: 1,
-        firstColor: "#FFE9B3-#101010",
-        multiColor: "-4|1|#9B6A40-#101010,0|-4|#96663D-#101010,6|-4|#9E653A-#101010,6|-13|#9E693D-#101010,0|-14|#936F47-#101010,6|-27|#9B673D-#101010,2|-29|#9B6D43-#101010,2|-35|#FFE9B3-#101010,2|-37|#976840-#101010,12|-36|#FFE9B3-#101010,12|-26|#FFE9B3-#101010,12|-17|#FFE9B3-#101010,16|-5|#9E653A-#101010,16|-17|#9D673D-#101010,24|2|#98663D-#101010,13|5|#9C673B-#101010",
+        firstColor:  "#97663E-#101010",
+        multiColor:  "0|3|#FFE9B3-#101010,-4|5|#966E42-#101010,-1|13|#89673E-#101010,2|14|#996439-#101010,2|20|#99623A-#101010,2|24|#9A663A-#101010,2|32|#9C6539-#101010,0|35|#C19D72-#101010,-6|40|#916037-#101010,-1|39|#FFE9B3-#101010,5|38|#FFE9B3-#101010,12|38|#FFE9B3-#101010,15|33|#9B653B-#101010,15|26|#8A683F-#101010,14|17|#906640-#101010,14|7|#8F633D-#101010,8|8|#FFE9B3-#101010,8|3|#FFE9B3-#101010,16|2|#8D6B41-#101010",
     },
     {
         name: 2,
-        firstColor: "#9E6E3D-#101010",
-        multiColor: "4|-5|#FFE9B3-#101010,8|-8|#FFE9B3-#101010,12|-3|#A57445-#101010,17|-7|#FFE9B3-#101010,22|-3|#FFE9B3-#101010,15|9|#9C673B-#101010,10|14|#A06E40-#101010,9|17|#A47141-#101010,5|22|#D5B889-#101010,-1|29|#97663A-#101010,26|5|#9E6B3D-#101010,24|13|#A77545-#101010,19|19|#986B3D-#101010,15|17|#FFE9B3-#101010,15|24|#9D6439-#101010,24|29|#FFE9B3-#101010,14|29|#FFE9B3-#101010,29|29|#A37242-#101010,12|34|#90653E-#101010",
+        firstColor: "#9C7943-#101010",
+        multiColor:  "3|-6|#FFE9B3-#101010,9|-1|#9B6D45-#101010,13|-9|#FFE9B3-#101010,16|-1|#9F693D-#101010,22|2|#FFE9B3-#101010,15|5|#9E6D40-#101010,16|12|#FFE9B3-#101010,8|13|#9D6941-#101010,10|19|#FFE9B3-#101010,3|19|#9C6B41-#101010,6|26|#FFE9B3-#101010,-4|27|#A67A49-#101010,15|33|#946D43-#101010,22|29|#FFE9B3-#101010,18|21|#99643C-#101010,23|14|#9B693F-#101010,28|1|#987346-#101010",
 
     },
     {
         name: 3,
-        firstColor: "#9F6D41-#101010",
-        multiColor: "5|-5|#FFE9B3-#101010,14|-7|#FFE9B3-#101010,12|-2|#A27143-#101010,11|6|#A06A3F-#101010,10|10|#FFE9B3-#101010,5|10|#A47C4D-#101010,9|16|#AB8654-#101010,5|21|#A37344-#101010,16|20|#A46F40-#101010,22|21|#FFE9B3-#101010,14|30|#FFE9B3-#101010,2|28|#FFE9B3-#101010,-3|23|#9F693F-#101010,1|33|#A06F42-#101010",
+        firstColor:  "#FFE9B3-#101010",
+        multiColor:  "-4|3|#9D6D40-#101010,9|-3|#FFE9B3-#101010,17|2|#FFE9B3-#101010,15|10|#FFE9B3-#101010,7|15|#FFE9B3-#101010,2|15|#9D7042-#101010,2|9|#9A6842-#101010,7|6|#A1844B-#101010,0|23|#977041-#101010,9|26|#A27949-#101010,17|27|#FFE9B3-#101010,12|32|#FFE9B3-#101010,6|33|#FFE9B3-#101010,0|33|#FFE9B3-#101010,19|13|#A06A3E-#101010,13|13|#FFE9B3-#101010",
 
     },
     {
         name: 4,
-        firstColor: "#FFE9B3-#101010",
-        multiColor: "-16|1|#946B4A-#101010,-11|10|#FEE8B2-#101010,-17|24|#FFE9B3-#101010,-11|20|#9E663B-#101010,-4|14|#9D653B-#101010,-6|31|#987047-#101010,2|34|#FFE9B3-#101010,9|25|#FFE9B3-#101010,7|31|#9D683D-#101010",
+        firstColor:  "#FFE9B3-#101010",
+        multiColor:  "-7|1|#A37C57-#101010,-2|-7|#A67644-#101010,3|-6|#FFE9B3-#101010,1|-16|#AA874F-#101010,7|-16|#FFE9B3-#101010,13|-22|#FFE9B3-#101010,7|-23|#A67744-#101010,17|-14|#FFE9B3-#101010,17|0|#FFE9B3-#101010,21|0|#FFE9B3-#101010,22|-4|#9F653A-#101010,11|9|#A57649-#101010,12|-7|#AA7649-#101010,9|-7|#A47243-#101010,24|8|#B08853-#101010,16|12|#FFE9B3-#101010",
 
     },
     {
         name: 5,
         firstColor: "#FFE9B3-#101010",
-        multiColor: "0|19|#FFE9B3-#101010,7|12|#99643B-#101010,11|8|#906A42-#101010,18|3|#FFE9B3-#101010,19|13|#966B42-#101010,13|11|#966E43-#101010,8|24|#876640-#101010,1|29|#916B44-#101010,6|34|#9A643B-#101010,7|39|#FFE9B3-#101010,20|28|#FFE9B3-#101010",
+        multiColor: "-5|0|#9B663C-#101010,-6|17|#98673E-#101010,-1|16|#FFE9B3-#101010,8|12|#FFE9B3-#101010,5|4|#9C6439-#101010,5|9|#9C643A-#101010,16|9|#95673F-#101010,21|15|#97673D-#101010,17|20|#FFE9B3-#101010,15|0|#FFE9B3-#101010,20|1|#99683F-#101010,15|31|#FFE9B3-#101010,1|35|#FFE9B3-#101010,2|29|#96663D-#101010,-3|24|#8D6A42-#101010",
 
     },
     {
         name: 6,
-        firstColor: "#9A6940-#101010",
-        multiColor: "-3|-3|#FFE9B3-#101010,-11|-7|#FFE9B3-#101010,-10|0|#9D6A40-#101010,-14|4|#9B7047-#101010,-17|8|#9E663B-#101010,-22|11|#FFE9B3-#101010,-22|19|#FFE9B3-#101010,-2|9|#A07349-#101010,1|5|#977247-#101010,-8|20|#9D6A3F-#101010,-8|22|#9E6D3F-#101010,-1|25|#FFE9B3-#101010",
+        firstColor:  "#FFE9B3-#101010",
+        multiColor: "4|3|#9B6C3E-#101010,-1|4|#986F3F-#101010,-6|4|#A27746-#101010,-13|10|#9D663A-#101010,-18|9|#FFE9B3-#101010,-19|27|#FFE9B3-#101010,-5|34|#FFE9B3-#101010,1|27|#FFE9B3-#101010,1|20|#FFE9B3-#101010,6|17|#9E6C3F-#101010,2|10|#9E6B3E-#101010,-7|22|#987143-#101010,-9|29|#9F683C-#101010",
     },
     {
         name: 0,
-        firstColor: "#D4E1FF-#101010",
-        multiColor: "15|-25|#E2EBFE-#101010,217|-2|#C9DAFF-#101010,575|-5|#FEE09A-#101010,785|-4|#FEE19A-#101010,1103|-312|#3D392A-#101010,1115|-477|#3D392A-#101010",
+        firstColor: "#3A3629-#101010",
+        multiColor:  "220|500|#D7E3FF-#101010,602|495|#FFE49F-#101010,820|320|#403D2D-#101010,817|12|#393528-#101010",
     },
     {
         nama: '错误',
@@ -89,88 +89,89 @@ function gameStartCaiJiaoYing() {
                         }
 
                         logi(JSON.stringify(pObj) + '---', numberJiaoYingColor[i].name);
-                        fastClick(pObj, numberJiaoYingColor[i].name);
-                        // if (
-                        //     filterList.length === 2
-                        // ) {
-                        //
-                        //     if (k === 0) {
-                        //         for (let j = 0; j < numberJiaoYingColor[i].name; j++) {
-                        //             var touch1x = random(x, x + 40);
-                        //             var touch1y = random(y, y + 40);
-                        //             touch1.push({
-                        //                 "action": 0,
-                        //                 "x": touch1x,
-                        //                 "y": touch1y,
-                        //                 "pointer": 1,
-                        //                 "delay": random(40, 50)
-                        //             });
-                        //             touch1.push({
-                        //                 "action": 1,
-                        //                 "x": touch1x,
-                        //                 "y": touch1y,
-                        //                 "pointer": 1,
-                        //                 "delay": 1
-                        //             });
-                        //         }
-                        //
-                        //     }
-                        //     if (k === 1) {
-                        //         for (let j = 0; j < numberJiaoYingColor[i].name; j++) {
-                        //             var touch2x = random(x, x + 40);
-                        //             var touch2y = random(y, y + 40);
-                        //             touch2.push({
-                        //                 "action": 0,
-                        //                 "x": touch2x,
-                        //                 "y": touch2y,
-                        //                 "pointer": 2,
-                        //                 "delay": random(40, 50)
-                        //             });
-                        //             touch2.push({
-                        //                 "action": 1,
-                        //                 "x": touch2x,
-                        //                 "y": touch2y,
-                        //                 "pointer": 2,
-                        //                 "delay": 1
-                        //             });
-                        //         }
-                        //     }
-                        //
-                        // } else {
-                        //     touch3.push([]);
-                        //     for (let j = 0; j < numberJiaoYingColor[i].name; j++) {
-                        //         var touch1xx = random(x, x + 40);
-                        //         var touch1yy = random(y, y + 40);
-                        //         touch3[touch3.length - 1].push({
-                        //             "action": 0,
-                        //             "x": touch1xx,
-                        //             "y": touch1yy,
-                        //             "pointer": touch3.length,
-                        //             "delay": random(40, 50)
-                        //         });
-                        //         touch3[touch3.length - 1].push({
-                        //             "action": 1,
-                        //             "x": touch1xx,
-                        //             "y": touch1yy,
-                        //             "pointer": touch3.length,
-                        //             "delay": 1
-                        //         });
-                        //     }
-                        //
-                        //     if (touch3.length > 1) {
-                        //         logi('[touch3]多点触控--' + JSON.stringify(touch3));
-                        //         multiTouch(touch3[0], touch3[1], null, 30000);
-                        //         touch3 = [];
-                        //     }
-                        //
-                        //
-                        // }
+                        // fastClick(pObj, numberJiaoYingColor[i].name);
+                        if (
+                            filterList.length === 2
+                        ) {
+
+                            if (k === 0) {
+                                for (let j = 0; j < numberJiaoYingColor[i].name; j++) {
+                                    var touch1x = random(x, x + 40);
+                                    var touch1y = random(y, y + 40);
+                                    touch1.push({
+                                        "action": 0,
+                                        "x": touch1x,
+                                        "y": touch1y,
+                                        "pointer": 1,
+                                        "delay": random(40, 50)
+                                    });
+                                    touch1.push({
+                                        "action": 1,
+                                        "x": touch1x,
+                                        "y": touch1y,
+                                        "pointer": 1,
+                                        "delay": 1
+                                    });
+                                }
+
+                            }
+                            if (k === 1) {
+                                for (let j = 0; j < numberJiaoYingColor[i].name; j++) {
+                                    var touch2x = random(x, x + 40);
+                                    var touch2y = random(y, y + 40);
+                                    touch2.push({
+                                        "action": 0,
+                                        "x": touch2x,
+                                        "y": touch2y,
+                                        "pointer": 2,
+                                        "delay": random(40, 50)
+                                    });
+                                    touch2.push({
+                                        "action": 1,
+                                        "x": touch2x,
+                                        "y": touch2y,
+                                        "pointer": 2,
+                                        "delay": 1
+                                    });
+                                }
+                            }
+
+                        } else {
+                            touch3.push([]);
+                            for (let j = 0; j < numberJiaoYingColor[i].name; j++) {
+                                var touch1xx = random(x, x + 40);
+                                var touch1yy = random(y, y + 40);
+                                touch3[touch3.length - 1].push({
+                                    "action": 0,
+                                    "x": touch1xx,
+                                    "y": touch1yy,
+                                    "pointer": touch3.length,
+                                    "delay": random(40, 50)
+                                });
+                                touch3[touch3.length - 1].push({
+                                    "action": 1,
+                                    "x": touch1xx,
+                                    "y": touch1yy,
+                                    "pointer": touch3.length,
+                                    "delay": 1
+                                });
+                            }
+
+                            if (touch3.length > 1) {
+                                logi('[touch3]多点触控--' + JSON.stringify(touch3));
+                                multiTouch(touch3[0], touch3[1], null, 30000);
+                                touch3 = [];
+                            }
+
+
+                        }
 
                     }
 
                     if (touch3.length === 1) {
                         logi('[touch1]多点触控--' + JSON.stringify(touch3));
                         multiTouch(touch3[0], null, null, 30000);
+                        // fastClick(pObj, numberJiaoYingColor[i].name);
                         touch3 = [];
                     }
 
@@ -188,7 +189,7 @@ function gameStartCaiJiaoYing() {
         }
         // 图片要回收
         image.recycle(tmpImage);
-        sleep(30);
+        // sleep(30);
     }
 
 
