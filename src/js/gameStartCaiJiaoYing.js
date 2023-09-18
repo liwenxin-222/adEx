@@ -3,7 +3,6 @@ var numberJiaoYingColor = [
         name: 1,
         firstColor: "#FFE9B3-#101010",
         multiColor: "-4|1|#9B6A40-#101010,0|-4|#96663D-#101010,6|-4|#9E653A-#101010,6|-13|#9E693D-#101010,0|-14|#936F47-#101010,6|-27|#9B673D-#101010,2|-29|#9B6D43-#101010,2|-35|#FFE9B3-#101010,2|-37|#976840-#101010,12|-36|#FFE9B3-#101010,12|-26|#FFE9B3-#101010,12|-17|#FFE9B3-#101010,16|-5|#9E653A-#101010,16|-17|#9D673D-#101010,24|2|#98663D-#101010,13|5|#9C673B-#101010",
-
     },
     {
         name: 2,
@@ -38,6 +37,11 @@ var numberJiaoYingColor = [
         name: 0,
         firstColor: "#D4E1FF-#101010",
         multiColor: "15|-25|#E2EBFE-#101010,217|-2|#C9DAFF-#101010,575|-5|#FEE09A-#101010,785|-4|#FEE19A-#101010,1103|-312|#3D392A-#101010,1115|-477|#3D392A-#101010",
+    },
+    {
+        nama: '错误',
+        firstColor: "#CA694F-#101010",
+        multiColor:"-49|7|#CF6F54-#101010,8|-59|#C7664E-#101010"
     }
 ]
 
@@ -52,6 +56,8 @@ function gameStartCaiJiaoYing() {
         let tmpImage = image.captureFullScreen();
 
         if (tmpImage != null) {
+            let touch3 = [];
+
             for (let i = 0; i < numberJiaoYingColor.length; i++) {
                 logi('开始截图---' + i);
 
@@ -68,7 +74,6 @@ function gameStartCaiJiaoYing() {
 
                     let touch1 = [];
                     let touch2 = [];
-                    let touch3 = [];
                     for (let k = 0; k < filterList.length; k++) {
                         var x = filterList[k].x;
                         var y = filterList[k].y;
@@ -132,9 +137,41 @@ function gameStartCaiJiaoYing() {
                             }
 
                         } else {
-                            fastClick(pObj, numberJiaoYingColor[i].name);
+                            touch3.push([]);
+                            for (let j = 0; j < numberJiaoYingColor[i].name; j++) {
+                                var touch1xx = random(x, x + 40);
+                                var touch1yy = random(y, y + 40);
+                                touch3[touch3.length - 1].push({
+                                    "action": 0,
+                                    "x": touch1xx,
+                                    "y": touch1yy,
+                                    "pointer": touch3.length,
+                                    "delay": random(40, 50)
+                                });
+                                touch3[touch3.length - 1].push({
+                                    "action": 1,
+                                    "x": touch1xx,
+                                    "y": touch1yy,
+                                    "pointer": touch3.length,
+                                    "delay": 1
+                                });
+                            }
+
+                            if (touch3.length > 1) {
+                                logi('[touch3]多点触控--' + JSON.stringify(touch3));
+                                multiTouch(touch3[0], touch3[1], null, 30000);
+                                touch3 = [];
+                            }
+
+
                         }
 
+                    }
+
+                    if (touch3.length === 1) {
+                        logi('[touch1]多点触控--' + JSON.stringify(touch3));
+                        multiTouch(touch3[0], null, null, 30000);
+                        touch3 = [];
                     }
 
                     if (
@@ -151,7 +188,7 @@ function gameStartCaiJiaoYing() {
         }
         // 图片要回收
         image.recycle(tmpImage);
-        // sleep(100);
+        sleep(30);
     }
 
 
