@@ -38,11 +38,6 @@ var numberJiaoYingColor = [
         firstColor: "#3A3629-#101010",
         multiColor:  "220|500|#D7E3FF-#101010,602|495|#FFE49F-#101010,820|320|#403D2D-#101010,817|12|#393528-#101010",
     },
-    {
-        nama: '错误',
-        firstColor: "#CA694F-#101010",
-        multiColor:"-49|7|#CF6F54-#101010,8|-59|#C7664E-#101010"
-    }
 ]
 
 function gameStartCaiJiaoYing() {
@@ -59,6 +54,9 @@ function gameStartCaiJiaoYing() {
             let touch3 = [];
 
             for (let i = 0; i < numberJiaoYingColor.length; i++) {
+                // if (i === 3) {
+                //     tmpImage = image.captureFullScreen();
+                // }
                 logi('开始截图---' + i);
 
                 let points = image.findMultiColor(
@@ -103,14 +101,14 @@ function gameStartCaiJiaoYing() {
                                         "x": touch1x,
                                         "y": touch1y,
                                         "pointer": 1,
-                                        "delay": random(40, 50)
+                                        "delay": random(30, 40)
                                     });
                                     touch1.push({
                                         "action": 1,
                                         "x": touch1x,
                                         "y": touch1y,
                                         "pointer": 1,
-                                        "delay": 1
+                                        "delay": 10
                                     });
                                 }
 
@@ -124,14 +122,14 @@ function gameStartCaiJiaoYing() {
                                         "x": touch2x,
                                         "y": touch2y,
                                         "pointer": 2,
-                                        "delay": random(40, 50)
+                                        "delay": random(30, 40)
                                     });
                                     touch2.push({
                                         "action": 1,
                                         "x": touch2x,
                                         "y": touch2y,
                                         "pointer": 2,
-                                        "delay": 1
+                                        "delay": 10
                                     });
                                 }
                             }
@@ -146,14 +144,14 @@ function gameStartCaiJiaoYing() {
                                     "x": touch1xx,
                                     "y": touch1yy,
                                     "pointer": touch3.length,
-                                    "delay": random(40, 50)
+                                    "delay": random(30, 40)
                                 });
                                 touch3[touch3.length - 1].push({
                                     "action": 1,
                                     "x": touch1xx,
                                     "y": touch1yy,
                                     "pointer": touch3.length,
-                                    "delay": 1
+                                    "delay": 10
                                 });
                             }
 

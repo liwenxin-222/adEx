@@ -38,7 +38,7 @@ function gameStartGeXiaoMai() {
         if (tmpImage != null) {
             let multiColor = [
                 "180|176|#818A93-#101010,203|436|#3B454E-#101010,220|950|#7E6231-#101010,926|970|#D3E1FF-#101010,1310|963|#FFE29D-#101010",
-                "1100|562|#7FA344-#101010",
+                // "1100|562|#7FA344-#101010",
             ];
             let points = image.cmpMultiColor(tmpImage, multiColor, 0.9, 50,265,2295,1045);
             logd("points " + points);
@@ -49,14 +49,14 @@ function gameStartGeXiaoMai() {
                     jobMap.game.xiaoMai.done = true;
                     // cancelInterval(t);
                     break;
-                case 1:
-                    logi('有坏籽');
+                // case 1:
+                //     logi('有坏籽');
                     // cancelInterval(t);
                     // sleep(2000);
                     // t = setInterval(function() {
                     //     loopSwiper();
                     // },random(400, 450));
-                    break;
+                    // break;
                 default:
                     loopSwiper();
                     logi('继续割小麦');
