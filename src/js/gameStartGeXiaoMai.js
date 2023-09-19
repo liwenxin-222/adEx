@@ -50,21 +50,27 @@ function gameStartGeXiaoMai() {
                     // cancelInterval(t);
                     break;
                 // case 1:
-                //     logi('有坏籽');
-                    // cancelInterval(t);
-                    // sleep(2000);
-                    // t = setInterval(function() {
-                    //     loopSwiper();
-                    // },random(400, 450));
-                    // break;
+                // logi('有坏籽');
+                // cancelInterval(t);
+                // sleep(2000);
+                // t = setInterval(function() {
+                //     loopSwiper();
+                // },random(400, 450));
+                // break;
                 default:
-                    loopSwiper();
-                    logi('继续割小麦');
+                    var isHasBad = image.findMultiColor(tmpImage,  "#7FA444-#101010",  "58|23|#7FA244-#101010", 1, 200,270,2030,1030, 10, 2);
+                    if (isHasBad) {
+                        sleep(1000);
+                        logi('有坏籽');
+                    } else {
+                        loopSwiper();
+                        logi('继续割小麦');
+                    }
             }
             //图片要回收
             image.recycle(tmpImage)
         }
 
-        sleep(200);
+        sleep(80);
     }
 }

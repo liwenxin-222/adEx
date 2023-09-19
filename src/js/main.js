@@ -23,6 +23,8 @@
 
 var jobMap = {
     isGO: true,
+    // 是第二个账号吗
+    isSecAct: false,
     game: {
         xiaoMai: {
             done: false,
@@ -156,7 +158,7 @@ function initImg () {
             "auto_click_request_dialog":false
         }
     );
-    // image.setFindColorImageMode(2);
+    image.setFindColorImageMode(2);
     let request = image.requestScreenCapture(10000,0);
     if (!request) {
         request = image.requestScreenCapture(10000,0);
