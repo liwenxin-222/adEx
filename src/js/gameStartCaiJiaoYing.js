@@ -157,9 +157,9 @@ function gameStartCaiJiaoYing() {
                                 });
                             }
 
-                            if (touch3.length > 1) {
+                            if (touch3.length > 2) {
                                 logi('[touch3]多点触控--' + JSON.stringify(touch3));
-                                multiTouch(touch3[0], touch3[1], null, 30000);
+                                multiTouch(touch3[0], touch3[1], touch3[2], 30000);
                                 touch3 = [];
                             }
 
@@ -171,6 +171,12 @@ function gameStartCaiJiaoYing() {
                     if (touch3.length === 1) {
                         logi('[touch1]多点触控--' + JSON.stringify(touch3));
                         multiTouch(touch3[0], null, null, 30000);
+                        // fastClick(pObj, numberJiaoYingColor[i].name);
+                        touch3 = [];
+                    }
+                    if (touch3.length === 2) {
+                        logi('[touch2]多点触控--' + JSON.stringify(touch3));
+                        multiTouch(touch3[0], touch3[1], null, 30000);
                         // fastClick(pObj, numberJiaoYingColor[i].name);
                         touch3 = [];
                     }
