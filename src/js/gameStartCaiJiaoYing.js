@@ -64,7 +64,7 @@ function gameStartCaiJiaoYing() {
                 let points = image.findMultiColor(
                     tmpImage, numberJiaoYingColor[i].firstColor,
                     numberJiaoYingColor[i].multiColor,
-                    0.9, 105, 415, 2215, 995, 20, 2
+                    0.9, 105, 415, 2215, 995, 50, 2
                 );
 
                 if (points) {
@@ -157,10 +157,11 @@ function gameStartCaiJiaoYing() {
                                 });
                             }
 
-                            if (touch3.length > 1) {
+                            if (touch3.length > 2) {
                                 logi('[touch3]多点触控--' + JSON.stringify(touch3));
-                                multiTouch(touch3[0], touch3[1], null, 30000);
+                                multiTouch(touch3[0], touch3[1], touch3[2], 30000);
                                 touch3 = [];
+                                sleep(10);
                             }
 
 
@@ -172,6 +173,13 @@ function gameStartCaiJiaoYing() {
                         logi('[touch1]多点触控--' + JSON.stringify(touch3));
                         multiTouch(touch3[0], null, null, 30000);
                         touch3 = [];
+                        sleep(10);
+                    }
+                    if (touch3.length === 2) {
+                        logi('[touch2]多点触控--' + JSON.stringify(touch3));
+                        multiTouch(touch3[0], touch3[1], null, 30000);
+                        touch3 = [];
+                        sleep(10);
                     }
 
                     if (
@@ -180,6 +188,7 @@ function gameStartCaiJiaoYing() {
                     ) {
                         logi('多点触控--' + JSON.stringify(touch1) + JSON.stringify(touch2));
                         multiTouch(touch1, touch2, null, 30000);
+                        sleep(10);
                     }
                 }
 
@@ -188,7 +197,7 @@ function gameStartCaiJiaoYing() {
         }
         // 图片要回收
         image.recycle(tmpImage);
-        sleep(30);
+        // sleep(30);
     }
 
 
