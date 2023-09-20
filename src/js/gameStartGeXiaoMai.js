@@ -1,24 +1,38 @@
 function gameStartGeXiaoMai() {
-    function startPoint() {
+    function rightPoint() {
         return {
             x: random(956, 1066),
             y: random(490, 630),
+            ex: random(1703, 1799),
+            ey: random(493, 596)
         }
     }
 
-    function endPoint() {
+    function centerPoint() {
         return {
-            x: random(1703, 1799),
-            y: random(493, 596)
+            x: random(495, 565),
+            y: random(443, 546),
+            ex: random(1680, 1790),
+            ey: random(443, 546),
         }
     }
 
-    function loopSwiper() {
-        var start = startPoint();
-        var end = endPoint();
-        swipeToPoint(start.x, start.y, end.x, end.y, random(250, 350));
-        swipeToPoint(end.x, end.y, start.x, start.y, random(260, 360));
+    function rightLoopSwiper() {
+        var rightPointO = rightPoint();
+        swipeToPoint(rightPointO.x, rightPointO.y, rightPointO.ex, rightPointO.ey, random(150, 220));
+        swipeToPoint(rightPointO.ex, rightPointO.ey, rightPointO.x, rightPointO.y, random(160, 220));
     }
+
+    function centerLoopSwiper() {
+        var centerPointO = centerPoint();
+        swipeToPoint(centerPointO.x, centerPointO.y, centerPointO.ex, centerPointO.ey, random(250, 320));
+    }
+
+    let flag = 'right';
+
+    setTimeout(() => {
+        flag = 'center';
+    }, 60000)
     // var t;
     // t = setInterval(function() {
     //     loopSwiper();
@@ -63,8 +77,13 @@ function gameStartGeXiaoMai() {
                         sleep(1000);
                         logi('有坏籽');
                     } else {
-                        loopSwiper();
-                        logi('继续割小麦');
+                        if (flag === 'right') {
+                            rightLoopSwiper();
+                            logi('继续割小麦 , 右边');
+                        } else {
+                            centerLoopSwiper();
+                            logi('继续割小麦 , 中间');
+                        }
                     }
             }
             //图片要回收
