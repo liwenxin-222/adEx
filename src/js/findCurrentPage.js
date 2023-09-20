@@ -124,6 +124,7 @@ function findCurrentPage() {
             default:
                 logi('不知道的页面')
                 startGame();
+                sleep(1000);
                 click_niangzao_wrapper();
                 GO();
         }

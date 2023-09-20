@@ -98,7 +98,7 @@ function gameStartBanQu() {
                     // 往左走
                     else {
                         logi('往左走');
-                        x = x - 95;
+                        x = x - 100;
                         ex = x + 10;
                     }
                     zhiZhen_X = currentPoint[0].x;
