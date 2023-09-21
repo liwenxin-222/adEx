@@ -82,7 +82,7 @@ function main() {
         }
         logi('主循环再跑~~~')
         findCurrentPage();
-        sleep(5000);
+        sleep(2000);
     }
     // if (!netcardProcessor()) {
     //     return;
