@@ -1,3 +1,9 @@
+function clickRandom(x,y, ex, ey) {
+    clickPoint(random(x, ex), random(y, ey));
+}
+function sleepRandom() {
+    sleep(random(400, 500));
+}
 // 我要购买
 function click_gouMai() {
     clickPoint(random(240, 400), random(140, 160));
@@ -126,4 +132,48 @@ function fastClick(point, count) {
         clickPoint(random(point.x[0], point.x[1]), random(point.y[0], point.y[1]));
         // sleep(random(10, 20));
     }
+}
+
+function click_menu() {
+    clickRandom(2097,507,2129,569);
+}
+
+function click_jiaYuan() {
+    clickRandom(1872,435,2084,507);
+}
+
+function click_jiaYuan_center_btn() {
+    clickRandom(1557,515,1617,572);
+}
+
+function click_jiaYuan_jiFenDuiHuan() {
+    clickRandom(1125,560,1242,587);
+}
+
+function click_jiaYuan_xiaoMaiZhongZi() {
+    clickRandom(1122,172,1259,249);
+}
+
+function click_jiaYuan_200() {
+    clickRandom(1545,955,1715,990);
+}
+
+function click_jiaYuan_200_ok_buy() {
+    clickRandom(1372,747,1559,782);
+}
+
+function click_jiaYuan_shop_back() {
+    clickRandom(342,25,492,60);
+}
+
+function click_jiaYuan_xxx() {
+    clickRandom(1717,405,1744,437);
+}
+
+function click_jiaYuan_boZhong() {
+    clickRandom(1092,777,1229,817);
+}
+
+function click_jiaYuan_leave() {
+    clickRandom(1955,347,1967,377);
 }

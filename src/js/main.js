@@ -23,6 +23,9 @@
 
 var jobMap = {
     isGO: true,
+    jiaYuan: {
+        shouGe: false,
+    },
     game: {
         xiaoMai: {
             done: false,

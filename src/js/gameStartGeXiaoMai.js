@@ -1,31 +1,31 @@
 function gameStartGeXiaoMai() {
     function rightPoint() {
         return {
-            x: random(956, 1066),
+            x: random(956, 966),
             y: random(490, 630),
-            ex: random(1703, 1799),
+            ex: random(1903, 1999),
             ey: random(493, 596)
         }
     }
 
     function centerPoint() {
         return {
-            x: random(495, 565),
+            x: random(295, 365),
             y: random(443, 546),
-            ex: random(1680, 1790),
+            ex: random(1903, 1999),
             ey: random(443, 546),
         }
     }
 
     function rightLoopSwiper() {
         var rightPointO = rightPoint();
-        swipeToPoint(rightPointO.x, rightPointO.y, rightPointO.ex, rightPointO.ey, random(150, 220));
-        swipeToPoint(rightPointO.ex, rightPointO.ey, rightPointO.x, rightPointO.y, random(160, 220));
+        swipeToPoint(rightPointO.x, rightPointO.y, rightPointO.ex, rightPointO.ey, random(240, 270));
+        swipeToPoint(rightPointO.ex, rightPointO.ey, rightPointO.x, rightPointO.y, random(240, 270));
     }
 
     function centerLoopSwiper() {
         var centerPointO = centerPoint();
-        swipeToPoint(centerPointO.x, centerPointO.y, centerPointO.ex, centerPointO.ey, random(150, 220));
+        swipeToPoint(centerPointO.x, centerPointO.y, centerPointO.ex, centerPointO.ey, random(240, 270));
     }
 
     let flag = 'right';

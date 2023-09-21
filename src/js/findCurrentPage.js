@@ -123,6 +123,7 @@ function findCurrentPage() {
                 break;
             default:
                 logi('不知道的页面')
+                jiaYuan();
                 startGame();
                 sleep(1000);
                 click_niangzao_wrapper();
