@@ -87,15 +87,15 @@ function findCurrentPage() {
             case 9:
                 logi('拌曲游戏结束');
                 click_game_wanchentiaozhan();
-                // sleep(2000);
-                // click_niangzao_wrapper();
+                sleep(2000);
+                click_niangzao_wrapper();
                 GO();
                 break;
             case 10:
                 logi('脚丫游戏结束');
-                // click_game_wanchentiaozhan();
-                // sleep(2000);
-                // GO();
+                click_game_wanchentiaozhan();
+                sleep(2000);
+                GO();
                 break;
             case 11:
                 logi('脚丫游戏开始');
@@ -127,6 +127,7 @@ function findCurrentPage() {
             default:
                 logi('不知道的页面')
                 startGame();
+                sleep(1000);
                 click_niangzao_wrapper();
                 GO();
         }
