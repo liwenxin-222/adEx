@@ -167,7 +167,7 @@ function click_jiaYuan_shop_back() {
 }
 
 function click_jiaYuan_xxx() {
-    clickRandom(1717,405,1744,437);
+    clickRandom(1720,410,1743,436);
 }
 
 function click_jiaYuan_boZhong() {

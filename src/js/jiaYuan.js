@@ -1,20 +1,24 @@
 function jiaYuan() {
-    if (jobMap.jiaYuan.shouGe === false) {
+    console.log(jobMap.jiaYuan.shouGe, 'jobMap.jiaYuan.shouGe')
+    if (!jobMap.jiaYuan.shouGe) {
         click_menu();
         sleepRandom();
         click_jiaYuan();
         sleepRandom();
-        sleep(3000);
-        swipeToPoint(392, 837, 462, 601, 4200);
+        sleep(4000);
+        swipeToPoint(392, 837, 462, 601, 4300);
         // 收割
-        click_jiaYuan_center_btn();
         sleep(2000);
+        click_jiaYuan_center_btn();
+        sleep(4000);
         click_jiaYuan_xxx();
         // sleep(5000);
         sleepRandom();
         // 遮罩
         click_jiaYuan_center_btn();
         sleep(1500);
+        click_jiaYuan_xxx();
+        sleepRandom();
         // 播种
         click_jiaYuan_center_btn();
         sleep(1500);
@@ -44,6 +48,6 @@ function jiaYuan() {
         click_jiaYuan_leave();
         sleep(4000);
 
-        jobMap.jiaYuan.shouGe === true;
+        jobMap.jiaYuan.shouGe = true;
     }
 }
