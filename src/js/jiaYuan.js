@@ -5,8 +5,10 @@ function jiaYuan() {
         sleepRandom();
         click_jiaYuan();
         sleepRandom();
-        sleep(4000);
-        swipeToPoint(392, 837, 462, 601, 4300);
+        sleep(8000);
+
+        swipeToXiaomai();
+
         // 收割
         sleep(2000);
         click_jiaYuan_center_btn();
@@ -44,7 +46,7 @@ function jiaYuan() {
         click_jiaYuan_center_btn();
         sleep(2000);
         click_jiaYuan_center_btn();
-        sleep(2000);
+        sleep(3000);
         click_jiaYuan_leave();
         sleep(4000);
 

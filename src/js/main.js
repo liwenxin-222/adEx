@@ -20,6 +20,9 @@
  *      例如: importPackage(java.util) 导入java.util下的类
  *
  */
+var XU_NI_JI = 'XU_NI_JI';
+var __current_equipment__ = XU_NI_JI;
+
 
 var jobMap = {
     isGO: true,
