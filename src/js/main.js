@@ -21,7 +21,8 @@
  *
  */
 var XU_NI_JI = 'XU_NI_JI';
-var __current_equipment__ = XU_NI_JI;
+var XIAO_MI_10 = 'XIAO_MI_10';
+var __current_equipment__ = XIAO_MI_10;
 
 
 var jobMap = {
